@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4F9F35020B6EA8F0046E1B0 /* TapKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F9F34E20B6EA8F0046E1B0 /* TapKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F9F35D20B6EC1F0046E1B0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F35C20B6EC1F0046E1B0 /* Keychain.swift */; };
+		A4F9F36020B6EC330046E1B0 /* KeychainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F35F20B6EC330046E1B0 /* KeychainRepresentable.swift */; };
+		A4F9F36320B6F6B00046E1B0 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F36220B6F6B00046E1B0 /* String+Additions.swift */; };
+		A4F9F36520B6F6E10046E1B0 /* Int+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F36420B6F6E10046E1B0 /* Int+Additions.swift */; };
+		A4F9F36720B6F6ED0046E1B0 /* Bool+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F36620B6F6ED0046E1B0 /* Bool+Additions.swift */; };
+		A4F9F36920B6F6F70046E1B0 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F36820B6F6F70046E1B0 /* Date+Additions.swift */; };
+		A4F9F36B20B6F7530046E1B0 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9F36A20B6F7530046E1B0 /* Data+Additions.swift */; };
+		A4F9F36D20B6FBAD0046E1B0 /* TapKeychain.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4F9F36C20B6FBAD0046E1B0 /* TapKeychain.podspec */; };
+		C68647FFC6733D189B5332F6 /* Pods_TapKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DFEDC3E5A828B38E7ACA1D /* Pods_TapKeychain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27DFEDC3E5A828B38E7ACA1D /* Pods_TapKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548C879BBB53FDC4A6818B08 /* Pods-TapKeychain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapKeychain.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapKeychain/Pods-TapKeychain.release.xcconfig"; sourceTree = "<group>"; };
+		9CEA9226841CCA84D866FDC4 /* Pods-TapKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapKeychain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapKeychain/Pods-TapKeychain.debug.xcconfig"; sourceTree = "<group>"; };
+		A4F9F34B20B6EA8F0046E1B0 /* TapKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F9F34E20B6EA8F0046E1B0 /* TapKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapKeychain.h; sourceTree = "<group>"; };
+		A4F9F34F20B6EA8F0046E1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F9F35C20B6EC1F0046E1B0 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		A4F9F35F20B6EC330046E1B0 /* KeychainRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainRepresentable.swift; sourceTree = "<group>"; };
+		A4F9F36220B6F6B00046E1B0 /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		A4F9F36420B6F6E10046E1B0 /* Int+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Additions.swift"; sourceTree = "<group>"; };
+		A4F9F36620B6F6ED0046E1B0 /* Bool+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Additions.swift"; sourceTree = "<group>"; };
+		A4F9F36820B6F6F70046E1B0 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		A4F9F36A20B6F7530046E1B0 /* Data+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
+		A4F9F36C20B6FBAD0046E1B0 /* TapKeychain.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TapKeychain.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4F9F34720B6EA8F0046E1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68647FFC6733D189B5332F6 /* Pods_TapKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16D337455A69C198DBFC2BF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA9226841CCA84D866FDC4 /* Pods-TapKeychain.debug.xcconfig */,
+				548C879BBB53FDC4A6818B08 /* Pods-TapKeychain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1DE3B68756203BDA58171625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27DFEDC3E5A828B38E7ACA1D /* Pods_TapKeychain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4F9F34120B6EA8F0046E1B0 = {
+			isa = PBXGroup;
+			children = (
+				A4F9F36C20B6FBAD0046E1B0 /* TapKeychain.podspec */,
+				A4F9F34D20B6EA8F0046E1B0 /* TapKeychain */,
+				A4F9F34C20B6EA8F0046E1B0 /* Products */,
+				16D337455A69C198DBFC2BF6 /* Pods */,
+				1DE3B68756203BDA58171625 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4F9F34C20B6EA8F0046E1B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F34B20B6EA8F0046E1B0 /* TapKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4F9F34D20B6EA8F0046E1B0 /* TapKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F34E20B6EA8F0046E1B0 /* TapKeychain.h */,
+				A4F9F34F20B6EA8F0046E1B0 /* Info.plist */,
+				A4F9F35820B6EB830046E1B0 /* TapKeychain */,
+			);
+			path = TapKeychain;
+			sourceTree = "<group>";
+		};
+		A4F9F35820B6EB830046E1B0 /* TapKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F36120B6ECEE0046E1B0 /* Extensions */,
+				A4F9F35E20B6EC240046E1B0 /* Protocols */,
+				A4F9F35B20B6EC0C0046E1B0 /* Classes */,
+			);
+			path = TapKeychain;
+			sourceTree = "<group>";
+		};
+		A4F9F35B20B6EC0C0046E1B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F35C20B6EC1F0046E1B0 /* Keychain.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A4F9F35E20B6EC240046E1B0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F35F20B6EC330046E1B0 /* KeychainRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A4F9F36120B6ECEE0046E1B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9F36620B6F6ED0046E1B0 /* Bool+Additions.swift */,
+				A4F9F36A20B6F7530046E1B0 /* Data+Additions.swift */,
+				A4F9F36820B6F6F70046E1B0 /* Date+Additions.swift */,
+				A4F9F36420B6F6E10046E1B0 /* Int+Additions.swift */,
+				A4F9F36220B6F6B00046E1B0 /* String+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A4F9F34820B6EA8F0046E1B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F9F35020B6EA8F0046E1B0 /* TapKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A4F9F34A20B6EA8F0046E1B0 /* TapKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F9F35320B6EA8F0046E1B0 /* Build configuration list for PBXNativeTarget "TapKeychain" */;
+			buildPhases = (
+				36A2C6485AB9C38007B525F4 /* [CP] Check Pods Manifest.lock */,
+				A4F9F34620B6EA8F0046E1B0 /* Sources */,
+				A4F9F34720B6EA8F0046E1B0 /* Frameworks */,
+				A4F9F34820B6EA8F0046E1B0 /* Headers */,
+				A4F9F34920B6EA8F0046E1B0 /* Resources */,
+				A4F9F35620B6EB410046E1B0 /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapKeychain;
+			productName = TapKeychain;
+			productReference = A4F9F34B20B6EA8F0046E1B0 /* TapKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4F9F34220B6EA8F0046E1B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tap Payments";
+				TargetAttributes = {
+					A4F9F34A20B6EA8F0046E1B0 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = A4F9F34520B6EA8F0046E1B0 /* Build configuration list for PBXProject "TapKeychain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4F9F34120B6EA8F0046E1B0;
+			productRefGroup = A4F9F34C20B6EA8F0046E1B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F9F34A20B6EA8F0046E1B0 /* TapKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4F9F34920B6EA8F0046E1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F9F36D20B6FBAD0046E1B0 /* TapKeychain.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36A2C6485AB9C38007B525F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapKeychain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4F9F35620B6EB410046E1B0 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4F9F34620B6EA8F0046E1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F9F36720B6F6ED0046E1B0 /* Bool+Additions.swift in Sources */,
+				A4F9F36020B6EC330046E1B0 /* KeychainRepresentable.swift in Sources */,
+				A4F9F36B20B6F7530046E1B0 /* Data+Additions.swift in Sources */,
+				A4F9F35D20B6EC1F0046E1B0 /* Keychain.swift in Sources */,
+				A4F9F36920B6F6F70046E1B0 /* Date+Additions.swift in Sources */,
+				A4F9F36320B6F6B00046E1B0 /* String+Additions.swift in Sources */,
+				A4F9F36520B6F6E10046E1B0 /* Int+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A4F9F35120B6EA8F0046E1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4F9F35220B6EA8F0046E1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4F9F35420B6EA8F0046E1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEA9226841CCA84D866FDC4 /* Pods-TapKeychain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TapKeychain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.TapKeychain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4F9F35520B6EA8F0046E1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548C879BBB53FDC4A6818B08 /* Pods-TapKeychain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TapKeychain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = company.tap.TapKeychain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4F9F34520B6EA8F0046E1B0 /* Build configuration list for PBXProject "TapKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F9F35120B6EA8F0046E1B0 /* Debug */,
+				A4F9F35220B6EA8F0046E1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F9F35320B6EA8F0046E1B0 /* Build configuration list for PBXNativeTarget "TapKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F9F35420B6EA8F0046E1B0 /* Debug */,
+				A4F9F35520B6EA8F0046E1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4F9F34220B6EA8F0046E1B0 /* Project object */;
+}
