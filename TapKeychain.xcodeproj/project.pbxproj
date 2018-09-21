@@ -97,9 +97,9 @@
 		A4F9F35820B6EB830046E1B0 /* TapKeychain */ = {
 			isa = PBXGroup;
 			children = (
+				A4F9F35B20B6EC0C0046E1B0 /* Classes */,
 				A4F9F36120B6ECEE0046E1B0 /* Extensions */,
 				A4F9F35E20B6EC240046E1B0 /* Protocols */,
-				A4F9F35B20B6EC0C0046E1B0 /* Classes */,
 			);
 			path = TapKeychain;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				TargetAttributes = {
 					A4F9F34A20B6EA8F0046E1B0 = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -405,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = company.tap.TapKeychain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
