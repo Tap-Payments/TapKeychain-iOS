@@ -2,19 +2,19 @@
 //  Date+Additions.swift
 //  TapKeychain
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 extension Date: KeychainRepresentable {
 
-    public func toData() -> Data? {
+    public func tap_toKeychainData() -> Data? {
 
         return NSKeyedArchiver.archivedData(withRootObject: self)
     }
 
-    public init?(data: Data) {
+    public init?(tap_keychainData: Data) {
 
-        if let result = NSKeyedUnarchiver.unarchiveObject(with: data) as? Date {
+        if let result = NSKeyedUnarchiver.unarchiveObject(with: tap_keychainData) as? Date {
 
             self = result
 

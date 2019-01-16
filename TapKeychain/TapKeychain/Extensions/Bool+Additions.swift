@@ -2,20 +2,20 @@
 //  Bool+Additions.swift
 //  TapKeychain
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 extension Bool: KeychainRepresentable {
 
-    public func toData() -> Data? {
+    public func tap_toKeychainData() -> Data? {
 
         var value = self
         return Data(bytes: &value, count: MemoryLayout.size(ofValue: value))
     }
 
-    public init?(data: Data) {
+    public init?(tap_keychainData: Data) {
 
-        if let result: Bool = data.withUnsafeBytes({ $0.pointee }) {
+        if let result: Bool = tap_keychainData.withUnsafeBytes({ $0.pointee }) {
 
             self = result
 

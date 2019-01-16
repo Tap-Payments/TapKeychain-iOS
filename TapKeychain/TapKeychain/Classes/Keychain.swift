@@ -2,7 +2,7 @@
 //  Keychain.swift
 //  TapKeychain
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 /// Keychain class.
@@ -42,7 +42,7 @@ public final class Keychain {
 
         if let data = self.objectData(for: key) {
 
-            return Object(data: data)
+            return Object(tap_keychainData: data)
 
         } else {
 
@@ -158,7 +158,7 @@ public final class Keychain {
 
     private static func getData<Object: KeychainRepresentable>(from object: Object) -> Data? {
 
-        guard let result = object.toData() else {
+        guard let result = object.tap_toKeychainData() else {
 
             print("Failed to create data from \(object).")
             return nil

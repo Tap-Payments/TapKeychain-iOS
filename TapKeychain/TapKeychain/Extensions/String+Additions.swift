@@ -2,18 +2,18 @@
 //  String+Additions.swift
 //  TapKeychain
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 extension String: KeychainRepresentable {
 
-    public func toData() -> Data? {
+    public func tap_toKeychainData() -> Data? {
 
         return self.data(using: .utf8, allowLossyConversion: false)
     }
 
-    public init?(data: Data) {
+    public init?(tap_keychainData: Data) {
 
-        self.init(data: data, encoding: .utf8)
+        self.init(data: tap_keychainData, encoding: .utf8)
     }
 }
