@@ -16,13 +16,21 @@ extension Int: KeychainRepresentable {
 
     public init?(tap_keychainData: Data) {
 
-        if let result: Int = tap_keychainData.withUnsafeBytes({ $0.pointee }) {
+		let result: Int? = tap_keychainData.withUnsafeBytes { (pointer) in
 
-            self = result
+			let memory = pointer.bindMemory(to: Int.self)
+			guard memory.count == 1 else { return nil }
 
-        } else {
+			return memory.first
+		}
 
-            return nil
-        }
+		if let nonnullResult = result {
+
+			self = nonnullResult
+
+		} else {
+
+			return nil
+		}
     }
 }
