@@ -16,17 +16,9 @@ extension Int: KeychainRepresentable {
 
     public init?(tap_keychainData: Data) {
 
-		let result: Int? = tap_keychainData.withUnsafeBytes { (pointer) in
+		if let result: Int = tap_keychainData.tap_decodePrimitive() {
 
-			let memory = pointer.bindMemory(to: Int.self)
-			guard memory.count == 1 else { return nil }
-
-			return memory.first
-		}
-
-		if let nonnullResult = result {
-
-			self = nonnullResult
+			self = result
 
 		} else {
 

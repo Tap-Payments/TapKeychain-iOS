@@ -15,17 +15,9 @@ extension Bool: KeychainRepresentable {
 
     public init?(tap_keychainData: Data) {
 
-		let result: Bool? = tap_keychainData.withUnsafeBytes { (pointer) in
+		if let result: Bool = tap_keychainData.tap_decodePrimitive() {
 
-			let memory = pointer.bindMemory(to: Bool.self)
-			guard memory.count == 1 else { return nil }
-
-			return memory.first
-		}
-
-		if let nonnullResult = result {
-
-			self = nonnullResult
+			self = result
 
 		} else {
 
